@@ -432,7 +432,7 @@ section#page4 {
     margin-top: 60px; }
 
 
-@media (max-width: 736px) {
+@media (max-width: 640px) {
 
  section#page1 h1 {
     font-size: 5vh;
