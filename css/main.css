@@ -431,4 +431,21 @@ section#page4 {
     padding-right: 15px;
     margin-top: 60px; }
 
+
+@media (max-width: 736px) {
+
+ section#page1 h1 {
+    font-size: 5vh;
+} 
+  
+ section#page1 h1 span {
+
+    font-size: 5vh;
+    text-align: center; 
+
+} 
+
+}
+
+
 /*# sourceMappingURL=main.css.map */
