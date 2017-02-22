@@ -1,0 +1,25 @@
+$place-holders-color: #313131 !default;
+
+@mixin placeholder-color ($color: $place-holders-color) {
+  & ::-webkit-input-placeholder { color: $color; } // WebKit browsers
+  & :-moz-placeholder { color: $color; opacity: 1; } // Mozilla Firefox 4 to 18
+  & ::-moz-placeholder { color: $color; opacity: 1; } // Mozilla Firefox 19+
+  & :-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+}
+
+$text-selection-color: inherit !default;
+$text-selection-bg-color: #a8d1ff !default;
+
+@mixin text-selection-color ($bg-color: $text-selection-bg-color, $color: $text-selection-color) {
+  & ::selection { background: $bg-color; color: $color; }  // WebKit/Blink Browsers
+  & ::-moz-selection { background: $bg-color; color: $color; } // Gecko Browsers
+}
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@function em($px, $base: $font-size-base) {
+  @return ($px / $base) * 1em;
+}
