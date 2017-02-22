@@ -174,7 +174,7 @@ div.pages {
       padding-bottom: 30px;
       position: relative; }
       div.pages section .prev-page a {
-        background: url("../img/arrow-up.png") no-repeat;
+      /*  background: url("../img/arrow-up.png") no-repeat;*/
         opacity: 0.6;
        /* width: 21px;
         height: 13px;*/
@@ -194,7 +194,7 @@ div.pages {
       line-height: 50px;
       padding-top: 30px; }
       div.pages section .next-page a {
-        background: url("../img/arrow-down.png") no-repeat;
+       /* background: url("../img/arrow-down.png") no-repeat;*/
         opacity: 0.6;
         width: 21px;
         height: 13px;
