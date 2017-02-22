@@ -1,0 +1,434 @@
+@font-face {
+  font-family: 'DINProBlack';
+  src: url("../fonts/DINPro-Black.eot");
+  src: url("../fonts/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Black.woff2") format("woff2"), url("../fonts/DINPro-Black.woff") format("woff"), url("../fonts/DINPro-Black.ttf") format("truetype"), url("../fonts/DINPro-Black.svg#DINPro-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINProRegular';
+  src: url("../fonts/DINPro-Regular.eot");
+  src: url("../fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Regular.woff2") format("woff2"), url("../fonts/DINPro-Regular.woff") format("woff"), url("../fonts/DINPro-Regular.ttf") format("truetype"), url("../fonts/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINProBold';
+  src: url("../fonts/DINPro-Bold.eot");
+  src: url("../fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold.ttf") format("truetype"), url("../fonts/DINPro-Bold.svg#DINPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINProLight';
+  src: url("../fonts/DINPro-Light.eot");
+  src: url("../fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Light.woff2") format("woff2"), url("../fonts/DINPro-Light.woff") format("woff"), url("../fonts/DINPro-Light.ttf") format("truetype"), url("../fonts/DINPro-Light.svg#DINPro-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DINProMedium';
+  src: url("../fonts/DINPro-Medium.eot");
+  src: url("../fonts/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Medium.woff2") format("woff2"), url("../fonts/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Medium.ttf") format("truetype"), url("../fonts/DINPro-Medium.svg#DINPro-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  overflow: hidden; }
+  body ::-webkit-input-placeholder {
+    color: #313131; }
+  body :-moz-placeholder {
+    color: #313131;
+    opacity: 1; }
+  body ::-moz-placeholder {
+    color: #313131;
+    opacity: 1; }
+  body :-ms-input-placeholder {
+    color: #313131; }
+  body ::selection {
+    background: #a8d1ff;
+    color: inherit; }
+  body ::-moz-selection {
+    background: #a8d1ff;
+    color: inherit; }
+
+a:focus, button:focus, input:focus {
+  outline: none; }
+
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms; }
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+/************************************************************************************
+CUSTOM BUTTONS
+*************************************************************************************/
+.stylized-button {
+  background: #fff;
+  display: inline-block;
+  color: #333; }
+  .stylized-button[disabled], .stylized-button .disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+/************************************************************************************
+CONTENT
+*************************************************************************************/
+main {
+  height: 100%; }
+
+ul.onepage-pagination {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  width: 10px;
+  text-align: center;
+  margin-top: -60px;
+  z-index: 10; }
+  ul.onepage-pagination li {
+    display: block;
+    line-height: 0;
+    margin-bottom: 20px; }
+    ul.onepage-pagination li a {
+      -webkit-transition: all 0.15s ease-in-out 0s;
+      -o-transition: all 0.15s ease-in-out 0s;
+      transition: all 0.15s ease-in-out 0s;
+      display: inline-block;
+      opacity: 0.6;
+      width: 8px;
+      height: 8px;
+      background-color: #FFF;
+      border-radius: 50%; }
+      ul.onepage-pagination li a.active {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #FFF;
+        background: none;
+        opacity: 1; }
+  ul.onepage-pagination.blue li a:not(.active) {
+    background-color: #5ea7d3; }
+  ul.onepage-pagination.blue li a.active {
+    border-color: #5ea7d3; }
+
+/************************************************************************************
+SLIDES
+*************************************************************************************/
+div.pages {
+  height: 100%; }
+  div.pages section {
+    width: 100%;
+    height: 100%; }
+    div.pages section .content {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 760px;
+      position: absolute;
+      left: 50%;
+      top: 50%; }
+      div.pages section .content:before, div.pages section .content:after {
+        content: " ";
+        display: table; }
+      div.pages section .content:after {
+        clear: both; }
+    div.pages section.blue {
+      background: #0079c2; }
+    div.pages section.red {
+      background: #ce2127; }
+    div.pages section.black {
+      background: #000000; }
+    div.pages section.gray {
+      background: #ececec; }
+    div.pages section .gradient {
+      background: url("../img/bg_gradient.png") no-repeat;
+      width: 848px;
+      height: 577px;
+      position: absolute;
+      top: -175px;
+      left: -40px; }
+    div.pages section .description {
+      border-left: 2px solid #FFFFFF;
+      border-right: 2px solid #FFFFFF;
+      text-align: center;
+      opacity: 0.6; }
+    div.pages section .prev-page {
+      text-align: center;
+      font-family: "DINProBold", Verdana, Arial, sans-serif;
+      color: #00588D;
+      font-size: 37px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 50px;
+      padding-bottom: 30px;
+      position: relative; }
+      div.pages section .prev-page a {
+        background: url("../img/arrow-up.png") no-repeat;
+        opacity: 0.6;
+        width: 21px;
+        height: 13px;
+        display: inline-block; }
+        div.pages section .prev-page a:hover {
+          opacity: 1; }
+      div.pages section .prev-page p {
+        margin: 0;
+        line-height: 1em; }
+    div.pages section .next-page {
+      text-align: center;
+      font-family: "DINProBold", Verdana, Arial, sans-serif;
+      color: #00588D;
+      font-size: 37px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 50px;
+      padding-top: 30px; }
+      div.pages section .next-page a {
+        background: url("../img/arrow-down.png") no-repeat;
+        opacity: 0.6;
+        width: 21px;
+        height: 13px;
+        display: inline-block; }
+        div.pages section .next-page a:hover {
+          opacity: 1; }
+      div.pages section .next-page p {
+        margin: 0;
+        line-height: 1em; }
+    div.pages section .social {
+      text-align: center; }
+      div.pages section .social ul {
+        padding-left: 0;
+        list-style: none;
+        margin: 0; }
+        div.pages section .social ul li {
+          display: inline-block;
+          width: 93px;
+          height: 93px;
+          margin-right: 45px; }
+          div.pages section .social ul li:last-child {
+            margin-right: 0; }
+          div.pages section .social ul li.fb {
+            background: url("../img/social/fb.png") no-repeat; }
+          div.pages section .social ul li.vk {
+            background: url("../img/social/vk.png") no-repeat; }
+          div.pages section .social ul li.inst {
+            background: url("../img/social/inst.png") no-repeat; }
+          div.pages section .social ul li.yt {
+            background: url("../img/social/yt.png") no-repeat; }
+          div.pages section .social ul li a {
+            display: block;
+            width: 93px;
+            height: 93px; }
+    div.pages section .contacts {
+      text-align: center;
+      opacity: 0.6;
+      font-size: 20px; }
+
+/************************************************************************************
+PAGE 1
+*************************************************************************************/
+section#page1 {
+  z-index: 3; }
+  section#page1 h1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "DINProBold", Verdana, Arial, sans-serif;
+    color: #FFF;
+    font-size: 152px;
+    text-transform: uppercase;
+    line-height: 120px; }
+    section#page1 h1 span {
+      color: #00588D;
+      font-size: 81px;
+      line-height: 81px;
+      display: block;
+      text-align: right; }
+  section#page1 .description {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 5;
+    padding-right: 5;
+    left: 16.66667%;
+    margin-top: 20px; }
+  section#page1 .contacts {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px; }
+    section#page1 .contacts a:last-child {
+      font-size: 19px; }
+  section#page1 .next-page {
+    font-family: "DINProBold", Verdana, Arial, sans-serif;
+    font-weight: normal;
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 100px; }
+
+/************************************************************************************
+PAGE 2
+*************************************************************************************/
+section#page2 {
+  z-index: 2; }
+  section#page2 .move {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 5;
+    padding-right: 5; }
+  section#page2 .description {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 5;
+    padding-right: 5;
+    left: 16.66667%;
+    margin-top: 85px; }
+  section#page2 .contacts {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px; }
+  section#page2 .social {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 65px; }
+  section#page2 .next-page {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px; }
+
+/************************************************************************************
+PAGE 3
+*************************************************************************************/
+section#page3 {
+  z-index: 1;
+  text-align: center; }
+  section#page3 .eng-agency {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  section#page3 .eng-slogan {
+    margin-top: 40px;
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  section#page3 .description {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 5;
+    padding-right: 5;
+    left: 16.66667%;
+    margin-top: 45px; }
+  section#page3 .contacts {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px; }
+  section#page3 .social {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 65px; }
+  section#page3 .next-page {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px; }
+
+/************************************************************************************
+PAGE 4
+*************************************************************************************/
+section#page4 {
+  z-index: 4;
+  text-align: center; }
+  section#page4 .socialist-media {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  section#page4 .contacts {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px; }
+    section#page4 .contacts a {
+      color: #0080C5; }
+  section#page4 .description {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 5;
+    padding-right: 5;
+    left: 16.66667%;
+    margin-top: 45px;
+    color: #0080C5;
+    border-color: #0080C5; }
+  section#page4 .social {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 60px; }
+
+/*# sourceMappingURL=main.css.map */
