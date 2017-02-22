@@ -132,8 +132,8 @@ div.pages {
     div.pages section .content {
       margin-right: auto;
       margin-left: auto;
-      /*padding-left: 15px;
-      padding-right: 15px;*/
+      padding-left: 15px;
+      padding-right: 15px;
       width: 760px;
       position: absolute;
       left: 50%;
@@ -176,8 +176,8 @@ div.pages {
       div.pages section .prev-page a {
         background: url("../img/arrow-up.png") no-repeat;
         opacity: 0.6;
-        width: 21px;
-        height: 13px;
+       /* width: 21px;
+        height: 13px;*/
         display: inline-block; }
         div.pages section .prev-page a:hover {
           opacity: 1; }
