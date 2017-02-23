@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 9px;
+    width: 1px;
 }
 
 * {
@@ -274,5 +274,5 @@ ul {
 }
 
 ::-webkit-scrollbar {
-    width: 9px;
+    width: 1px;
 }
