@@ -104,11 +104,11 @@ ul {
 }
 .burger {
   position: absolute;
-  right: 0;
+  right: 40%;
   top: 100%;
   width: 60px;
   height: 60px;
-  background: #1a1a1a;
+  background: transparent;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
