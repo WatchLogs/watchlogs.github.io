@@ -248,12 +248,12 @@ section#page1 {
     padding-right: 15px;
     font-family: "DINProBold", Verdana, Arial, sans-serif;
     color: #FFF;
-    font-size: 13vh;
+    font-size: 12vh;
    /* text-transform: uppercase;*/
     line-height: 120px; }
     section#page1 h1 span {
       color: #00588D;
-      font-size: 7.5vh;
+      font-size: 7vh;
       line-height: 81px;
       display: block;
       text-align: right; }
