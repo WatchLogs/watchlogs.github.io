@@ -31,6 +31,15 @@
 html {
   height: 100%; }
 
+#f {
+width: 100%;
+  height: 300px;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+
+}
+
 body {
   height: 100%;
   overflow: hidden; }
