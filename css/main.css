@@ -453,6 +453,12 @@ section#page4 {
     text-align: center; 
 
 } 
+  
+  #f {
+  
+    width:55%;
+  
+  }
 
 }
 ::-webkit-scrollbar {
