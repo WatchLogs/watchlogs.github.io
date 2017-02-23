@@ -446,6 +446,9 @@ section#page4 {
 } 
 
 }
+::-webkit-scrollbar {
+    width: 1px;
+}
 
 
 /*# sourceMappingURL=main.css.map */
