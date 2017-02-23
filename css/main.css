@@ -249,7 +249,7 @@ section#page1 {
     font-family: "DINProBold", Verdana, Arial, sans-serif;
     color: #FFF;
     font-size: 15vh;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
     line-height: 120px; }
     section#page1 h1 span {
       color: #00588D;
