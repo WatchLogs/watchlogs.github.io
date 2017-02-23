@@ -272,3 +272,7 @@ ul {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
 }
+
+::-webkit-scrollbar {
+    width: 9px;
+}
